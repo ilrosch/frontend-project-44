@@ -1,0 +1,15 @@
+{
+  "name": "@hexlet/code",
+  "version": "1.0.0",
+  "description": "Проект \"Игры Разума\" с Хекслета",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ilya Roschikhmarov",
+  "license": "ISC",
+  "bin": {
+    "brain-games": "bin/brain-games.js"
+  }
+}
