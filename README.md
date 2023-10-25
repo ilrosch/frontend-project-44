@@ -1,3 +1,8 @@
+### Hexlet tests and linter status:
+[![Actions Status](https://github.com/ilrosch/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/ilrosch/frontend-project-44/actions)
+
+[![Maintainability](https://api.codeclimate.com/v1/badges/d86b766af7adfea90518/maintainability)](https://codeclimate.com/github/ilrosch/frontend-project-44/maintainability)
+
 # Проект "Игры разума"
 «Игры разума» — набор из пяти консольных игр, построенных по принципу популярных мобильных приложений для прокачки мозга. Каждая игра задает вопросы, на которые нужно дать правильные ответы. После трех правильных ответов считается, что игра пройдена. Неправильные ответы завершают игру и предлагают пройти ее заново. Игры:
 
@@ -31,8 +36,3 @@
 
 ## Игра "Простое ли число?"
 [![asciicast](https://asciinema.org/a/6Yp9gxCGfTLbCOWvwKBslgV09.svg)](https://asciinema.org/a/6Yp9gxCGfTLbCOWvwKBslgV09)
-
-### Hexlet tests and linter status:
-[![Actions Status](https://github.com/ilrosch/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/ilrosch/frontend-project-44/actions)
-
-[![Maintainability](https://api.codeclimate.com/v1/badges/d86b766af7adfea90518/maintainability)](https://codeclimate.com/github/ilrosch/frontend-project-44/maintainability)
