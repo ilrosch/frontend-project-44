@@ -1,18 +1,16 @@
 #!/usr/bin/env node
-import { game } from '../../src/index.js'; // Выполняем импорт функционала игр
+import { game, getRandomNumber } from '../../src/index.js'; // Выполняем импорт функционала игр
 
 // Функция, которая создает случайный вопрос к игре арифметическая прогрессия
 const randomQuestionProgression = () => {
     // Создаем случайное число, с которого будет начинаться прогрессия
-    let number1 = Math.floor(Math.random() * 50);
-    // Функция, которая создает число в заданном диапазоне [ x, y )
-    const getRandomNumber = (min, max) => Math.floor(Math.random() * (max - min) + min);
+    let number = getRandomNumber(50);
     // Последовательность от 5 до 10
-    const len = getRandomNumber(5, 11);
+    const len = getRandomNumber(11, 5);
     // Получаем индекс, по которому будет пропущено число
-    const skip = getRandomNumber(0, len);
+    const skip = getRandomNumber(len);
     // Создаем случайное число для разности арифметической прогрессии
-    const difference = Math.floor(Math.random() * 20);
+    const difference = getRandomNumber(21, -20);
     // Создаем арифметическую прогрессию
     const progression = [];
 
@@ -20,8 +18,8 @@ const randomQuestionProgression = () => {
     let count = 0;
     // Создаем арифметическую прогрессию
     while (count != len) {
-        progression.push(number1);
-        number1 += difference;
+        progression.push(number);
+        number += difference;
         count += 1;
     }
 

@@ -1,11 +1,11 @@
 #!/usr/bin/env node
-import { game } from '../../src/index.js'; // Выполняем импорт функционала игр
+import { game, getRandomNumber } from '../../src/index.js'; // Выполняем импорт функционала игр
 
 // Функция, которая создает случайный вопрос к игре наибольший общий делитель
 const randomQuestionGcd = () => {
     // Создаем два случайных числа number1 и number2
-    const number1 = Math.floor(Math.random() * 100);
-    const number2 = Math.floor(Math.random() * 100);
+    const number1 = getRandomNumber(101, 1);
+    const number2 = getRandomNumber(101, 1);
     // Создаем случайный вопрос из двух чисел выше
     const question = `${number1} ${number2}`;
 

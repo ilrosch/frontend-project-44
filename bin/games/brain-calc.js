@@ -1,13 +1,13 @@
 #!/usr/bin/env node
-import { game } from '../../src/index.js'; // Выполняем импорт функционала игр
+import { game, getRandomNumber } from '../../src/index.js'; // Выполняем импорт функционала игр
 
 // Функция, которая создает случайный вопрос к игре с вычислениями
 const randomQuestionCalc = () => {
   // Создаем два случайных числа number1 и number2
-  const number1 = Math.floor(Math.random() * 100);
-  const number2 = Math.floor(Math.random() * 100);
+  const number1 = getRandomNumber(100);
+  const number2 = getRandomNumber(100);
   // Создаем случайное число для определения операции
-  const operation = Math.floor(Math.random() * 3);
+  const operation = getRandomNumber(3);
 
   let correctAnswer = 0; // Правильный ответ на вопрос
   let question = ''; // Вопрос, на который отвечает игрок

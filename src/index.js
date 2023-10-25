@@ -20,6 +20,10 @@ const randomQuestion = (defGame) => {
   return [userAnswer, correctAnswer, correctAnswer === userAnswer];
 };
 
+// Функция, которая генерирует случайные числа в заданном диапазоне
+// Функция, которая создает число в заданном диапазоне [ x, y )
+const getRandomNumber = (max, min = 0) => Math.floor(Math.random() * (max - min) + min);
+
 // Основная функция игры
 const game = (rules, defGame) => {
   // Выводим в консоль правила игры
@@ -40,4 +44,4 @@ const game = (rules, defGame) => {
   console.log(`Congratulations, ${userName}!`);
 };
 
-export { game };
+export { game, getRandomNumber };

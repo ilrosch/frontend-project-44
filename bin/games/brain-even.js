@@ -1,10 +1,10 @@
 #!/usr/bin/env node
-import { game } from '../../src/index.js'; // Выполняем импорт функционала игр
+import { game, getRandomNumber } from '../../src/index.js'; // Выполняем импорт функционала игр
 
 // Функция, которая создает случайный вопрос для игры в четность числа
 const randomQuestionParity = () => {
   // Создается случайный вопрос с числом
-  const question = Math.floor(Math.random() * 100);
+  const question = getRandomNumber(100);
   // Получаем правильный ответ на созданный вопрос
   const correctAnswer = (question % 2 === 0) ? 'yes' : 'no';
   // Возвращаем из функции созданный вопрос и правильный ответ на него

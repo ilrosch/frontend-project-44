@@ -1,10 +1,10 @@
 #!/usr/bin/env node
-import { game } from '../../src/index.js'; // Выполняем импорт функционала игр
+import { game, getRandomNumber } from '../../src/index.js'; // Выполняем импорт функционала игр
 
 // Функция, которая создает случайный вопрос к игре арифметическая прогрессия
 const randomQuestionPrime = () => {
     // Создаем случайное число, с которого будет начинаться прогрессия
-    const number = Math.floor(Math.random() * 200);
+    const number = getRandomNumber(200);
     // Правильный ответ на вопрос
     let correctAnswer = 'yes';
     // Ищим делители числа
