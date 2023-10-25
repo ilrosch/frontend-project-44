@@ -2,3 +2,4 @@
 import getGreeting from '../src/cli.js';
 
 getGreeting();
+

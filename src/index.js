@@ -45,3 +45,4 @@ const game = (rules, defGame) => {
 };
 
 export { game, getRandomNumber };
+
