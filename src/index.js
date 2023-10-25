@@ -16,7 +16,8 @@ const randomQuestion = (defGame) => {
   // Метод toLowerCase() используется для текстовых игр, чтобы 'yes' === 'Yes' === 'YES' и т.д.
   const userAnswer = readlineSync.question('Your answer: ').toLowerCase();
 
-  // Возвращаем из функции ответ игрока, правильный ответ, boolean значение (правильно ли ответил игрок?)
+  // Возвращаем из функции
+  // ответ игрока, правильный ответ, boolean значение (правильно ли ответил игрок?)
   return [userAnswer, correctAnswer, correctAnswer === userAnswer];
 };
 
@@ -31,11 +32,15 @@ const game = (rules, defGame) => {
 
   // С помощью цикла задаем кол-во раундов
   for (let i = 0; i < 3; i += 1) {
-    const [userAnswer, correctAnswer, answer] = randomQuestion(defGame); // defGame - функция конкретной игры
+    // defGame - функция конкретной игры
+    const [userAnswer, correctAnswer, answer] = randomQuestion(defGame);
     if (answer) { // answer - boolean значение (правильно ли ответил игрок?)
       console.log('Correct!');
     } else {
-      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'. \n Let's try again, ${userName}!`);
+      console.log(
+        `'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'. \n
+        Let's try again, ${userName}!`,
+      );
       return;
     }
   }
@@ -45,4 +50,3 @@ const game = (rules, defGame) => {
 };
 
 export { game, getRandomNumber };
-
