@@ -15,11 +15,11 @@ const isPrime = (num) => {
 // Функция, которая генерирует вопрос к игре простое число
 const generateQuestionPrime = () => {
   // Создаем случайное число
-  const num = getRandomNumber(200);
+  const number = getRandomNumber(200);
   // Правильный ответ на вопрос
-  const correctAnswer = isPrime(num) ? 'yes' : 'no';
+  const correctAnswer = isPrime(number) ? 'yes' : 'no';
   // Возвращаем из функции созданный вопрос и правильный ответ на него
-  return [num, correctAnswer];
+  return [number, correctAnswer];
 };
 // Правила игры
 const rulesGame = 'Answer "yes" if given number is prime. Otherwise answer "no".';
